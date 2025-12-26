@@ -1,6 +1,6 @@
 # Quotio
 
-![Quotio Banner](screenshots/dashboard.png)
+![Quotio Banner](screenshots/menu_bar.png)
 
 <p align="center">
   <img src="https://img.shields.io/badge/platform-macOS-lightgrey.svg?style=flat" alt="Platform macOS" />
@@ -17,13 +17,14 @@ Quotio là ứng dụng macOS để quản lý **CLIProxyAPI** - máy chủ prox
 
 ## ✨ Tính năng
 
-- **🔌 Hỗ trợ Đa nhà cung cấp**: Kết nối tài khoản từ Gemini, Claude, OpenAI, Qwen, Vertex AI, iFlow, Antigravity qua OAuth hoặc API key.
+- **🔌 Hỗ trợ Đa nhà cung cấp**: Kết nối tài khoản từ Gemini, Claude, OpenAI Codex, Qwen, Vertex AI, iFlow, Antigravity, Kiro, và GitHub Copilot qua OAuth hoặc API key.
 - **🚀 Cấu hình Agent Một chạm**: Tự động phát hiện và cấu hình các công cụ như Claude Code, OpenCode, Gemini CLI.
 - **📊 Dashboard Thời gian thực**: Giám sát lưu lượng, token sử dụng và tỷ lệ thành công.
 - **📉 Quản lý Hạn mức**: Theo dõi quota từng tài khoản với chiến lược chuyển đổi tự động (Round Robin / Fill First).
 - **🔑 Quản lý API Key**: Tạo và quản lý các khóa API cho proxy.
-- **🖥️ Menu Bar**: Truy cập nhanh trạng thái và điều khiển từ thanh menu.
+- **🖥️ Menu Bar**: Truy cập nhanh trạng thái, tổng quan quota và biểu tượng provider tùy chỉnh từ thanh menu.
 - **🔔 Thông báo**: Cảnh báo khi hạn mức thấp, tài khoản đang nghỉ, hoặc lỗi dịch vụ.
+- **🔄 Tự động Cập nhật**: Tích hợp Sparkle updater để cập nhật liền mạch.
 - **🌍 Đa ngôn ngữ**: Hỗ trợ tiếng Anh và tiếng Việt.
 
 ## 📸 Hình ảnh
@@ -48,6 +49,8 @@ Quotio là ứng dụng macOS để quản lý **CLIProxyAPI** - máy chủ prox
 | Vertex AI | Service Account JSON |
 | iFlow | OAuth |
 | Antigravity | OAuth |
+| Kiro | OAuth |
+| GitHub Copilot | OAuth |
 
 ### Agent tương thích
 Quotio có thể tự động cấu hình các công cụ sau:
@@ -64,11 +67,19 @@ Quotio có thể tự động cấu hình các công cụ sau:
 - macOS 15.0 (Sequoia) trở lên
 - Kết nối internet để xác thực OAuth
 
+### Tải xuống
+Tải file `.dmg` mới nhất từ trang [Releases](https://github.com/nguyenphutrong/quotio/releases).
+
+> ⚠️ **Lưu ý**: Ứng dụng chưa được ký bằng chứng chỉ Apple Developer. Nếu macOS chặn ứng dụng, chạy lệnh sau:
+> ```bash
+> xattr -cr /Applications/Quotio.app
+> ```
+
 ### Build từ source
 
 1. **Clone repo:**
    ```bash
-   git clone https://github.com/user/Quotio.git
+   git clone https://github.com/nguyenphutrong/quotio.git
    cd Quotio
    ```
 

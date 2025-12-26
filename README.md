@@ -1,6 +1,6 @@
 # Quotio
 
-![Quotio Banner](screenshots/dashboard.png)
+![Quotio Banner](screenshots/menu_bar.png)
 
 <p align="center">
   <img src="https://img.shields.io/badge/platform-macOS-lightgrey.svg?style=flat" alt="Platform macOS" />
@@ -17,13 +17,14 @@ Quotio is a native macOS application for managing **CLIProxyAPI** - a local prox
 
 ## ✨ Features
 
-- **🔌 Multi-Provider Support**: Connect accounts from Gemini, Claude, OpenAI, Qwen, Vertex AI, iFlow, and Antigravity via OAuth or API keys.
+- **🔌 Multi-Provider Support**: Connect accounts from Gemini, Claude, OpenAI Codex, Qwen, Vertex AI, iFlow, Antigravity, Kiro, and GitHub Copilot via OAuth or API keys.
 - **🚀 One-Click Agent Configuration**: Auto-detect and configure AI coding tools like Claude Code, OpenCode, Gemini CLI, and more.
 - **📊 Real-time Dashboard**: Monitor request traffic, token usage, and success rates live.
 - **📉 Smart Quota Management**: Visual quota tracking per account with automatic failover strategies (Round Robin / Fill First).
 - **🔑 API Key Management**: Generate and manage API keys for your local proxy.
-- **🖥️ Menu Bar Integration**: Quick access to server status and controls from your menu bar.
+- **🖥️ Menu Bar Integration**: Quick access to server status, quota overview, and custom provider icons from your menu bar.
 - **🔔 Notifications**: Alerts for low quotas, account cooling periods, or service issues.
+- **🔄 Auto-Update**: Built-in Sparkle updater for seamless updates.
 - **🌍 Bilingual**: English and Vietnamese support.
 
 ## 📸 Screenshots
@@ -48,6 +49,8 @@ Quotio is a native macOS application for managing **CLIProxyAPI** - a local prox
 | Vertex AI | Service Account JSON |
 | iFlow | OAuth |
 | Antigravity | OAuth |
+| Kiro | OAuth |
+| GitHub Copilot | OAuth |
 
 ### Compatible CLI Agents
 Quotio can automatically configure these tools to use your centralized proxy:
@@ -64,11 +67,19 @@ Quotio can automatically configure these tools to use your centralized proxy:
 - macOS 15.0 (Sequoia) or later
 - Internet connection for OAuth authentication
 
+### Download
+Download the latest `.dmg` from the [Releases](https://github.com/nguyenphutrong/quotio/releases) page.
+
+> ⚠️ **Note**: The app is not signed with an Apple Developer certificate yet. If macOS blocks the app, run:
+> ```bash
+> xattr -cr /Applications/Quotio.app
+> ```
+
 ### Building from Source
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/user/Quotio.git
+   git clone https://github.com/nguyenphutrong/quotio.git
    cd Quotio
    ```
 
